@@ -1,11 +1,11 @@
-//Excerise 09:Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.//
+//Excerise 12: Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.//
 
-//Excerise 10(A) Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.//
+import { subscribe } from "diagnostics_channel";
 
-//Tooba Anwar
-//wednesday,feb-4-2025
+let names: string [] = ["Sakina","Muhammad", "Zain", "Fareeha"];
 
-//store my favorite number in a variable
-const Favorite_Number: number = 57142;
-const message: string = (`My favorite number is,${Favorite_Number}`);
-console.log(message);
+
+console.log(`Make Sure To Subscribe To Our Channel, ${names[0]}`);
+console.log(`Make Sure To Subscribe To Our Channel, ${names[1]}`);
+console.log(`Make Sure To Subscribe To Our Channel, ${names[2]}`);
+console.log(`Make Sure To Subcribe  To Our Channel, ${names[3]}`);
