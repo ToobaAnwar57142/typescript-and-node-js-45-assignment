@@ -1,5 +1,5 @@
 {
-  "name": "excerise-20",
+  "name": "excerise-21",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.25"
+    "@types/node": "^20.11.26"
   }
 }
