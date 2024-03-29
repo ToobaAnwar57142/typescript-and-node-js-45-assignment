@@ -1,18 +1,7 @@
-//They think of something you could store in a TypeScript Object. 
-//Write a program that creates Objects containing these items.
-var person = {
-    age: 14,
-    name: 'Tooba',
-    nationality: 'Pakistan',
-    student: true,
-};
-//print person
-console.log(person);
-//car object
-var car = {
-    maker: 'toyota',
-    color: 'Black',
-    automatic: true
-};
-//print car
-console.log(car);
+/*Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.*/
+var array = ['Anwar', 'Muhammad', 'Sakina', 5, 7, 14, 2];
+console.log(array[5]);
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+console.log(array[4]);

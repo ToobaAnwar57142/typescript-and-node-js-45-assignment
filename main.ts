@@ -1,36 +1,14 @@
-//They think of something you could store in a TypeScript Object. 
-//Write a program that creates Objects containing these items.
+/*Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.*/
 
-interface person{
-    age: number,
-    name: string,
-    nationality: string,
-    student : Boolean
-}
-
-let person :person = {
-
-    age : 14,
-    name :'Tooba',
-    nationality : 'Pakistan',
-    student : true,
-}
-//print person
-console.log(person);
+let array: (string | number) [] = ['Anwar','Muhammad','Sakina',5,7,14,2];
+console.log(array[5]);
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+console.log(array[4]);
 
 
-//Datatype of car object
-interface car{
-    maker : string,
-    color : string,
-    automatic : boolean,
-}
-//car object
-let car = {
-    maker : 'toyota',
-    color : 'Black',
-    automatic : true
-}
 
-//print car
-console.log(car);
+
+
+
