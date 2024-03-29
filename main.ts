@@ -1,20 +1,7 @@
-//Excerise 3:Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+//Excerise 04.Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
+//Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 
-let PersonName: string = "Tooba Anwar";
 
-//step 1 show in lower case:
-let lowercaseName: string = PersonName.toLowerCase();
-console.log(lowercaseName);
-
-//step 2 show name in uppercase
-let uppercaseName: string = PersonName.toUpperCase();
-console.log(uppercaseName);
-
-//step 3 show namein titlecase
-let words: string[] =PersonName.split(" ");
-let titlecaseName: string = ""
-for (let i = 0 ; i <words.length; i++) {
-titlecaseName +=words[i].charAt(0).toUpperCase() +words[i].slice(1).toLocaleLowerCase()+" "
-};
-
-console.log(titlecaseName)
+let Author: String = "Albert Einstein";
+let quote = "A person who never made a mistake never tried anything new.";
+console.log(`${Author} once said, ${quote}`);
