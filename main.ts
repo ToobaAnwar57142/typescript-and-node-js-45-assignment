@@ -1,59 +1,36 @@
-/*Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:*/
+//More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 
-/*let car = 'subaru';*/
-let car :string = 'subaru';
+//• Tests for equality and Inequality Test no: 01 
+console.log("Equality test with strings:","Apple" === "Apple");
+//• Tests for equality and Inequality Test no: 02
+console.log("Inequality test with test strings:",("Apple" as string) !="Orange");
 
-console.log("Is car == 'subaru'? I predict True.")
-console.log(car == 'subaru')
+//• Tests using the lower case function
+console.log("Lower Case function test:", "HELLO".toLowerCase() === "hello");
 
-/*• Look closely at your results, and make sure you understand why each line evaluates to True or False.
-• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.*/
+//• Numerical tests involving equality 
+console.log("Equality test with number:", 57 === 57);
+//• Numerical tests involving inequality
+console.log("Inequailty test with numbers:", (57 as number) != 14);
 
-//Test No :01
-console.log("is car =='subaru? I predict True.");
-console.log(car === 'subaru');
+//greater than test
+console.log("Greater than test:", 10 >5);
+//less than test
+console.log("Greater than test:", 10 <5);
 
-//Task No :02
-console.log("Is car =='subaru'? I predict True.");
-console.log(car == 'subaru');
+//greater than or equal to
+console.log("Greater than and test:", 10 >= 10);
+//less than or equal to
+console.log("less than or equal to test", 5 <= 10);
 
-//Task No :03
-console.log("Is car I='Honda'? I predict True'");
-console.log(car != 'Honda');
+//• Tests using "and" operator
+console.log("And operator test:", 5===5 && 10 > 5);
+//Test using "or" operator
+console.log("or operator test: ", 5===5 || false);
 
-//Task No :04
-console.log("Is car !== 'found? I predict True.");
-console.log(car !== 'ford');
+//• Test whether an item is in a array
+const fruits:string[] = ['Apple','Banana','Mango'];
+console.log('Test "Apple" in the array:', fruits.includes("Apple"));
 
-//Task No :05
-console.log("Is car.Upper case == 'SUBARU'? I predict True.");
-console.log(car =='SUBARU');
-
-//Task No:06
-console.log("Is car == 'SUBARU'? I predict False.");
-console.log(car ==  'SUBARU');
-
-//Task No:07
-console.log("Is car === 'SUBARU'? I predict False.");
-console.log(car === 'SUBARU');
-
-//Task No:08
-console.log("Is car === 'SUBARU'? I predict False.");
-console.log(car === 'Tooba')
-
-//Task No:09
-console.log("Is car=== 'Bus'? I predict False.");
-console.log(car === 'Bus');
-
-//Task No:10
-console.log("Is car === 'Cycle'? I predoct False.");
-console.log(car === 'Cycle');
-
-
-
-
-
-
-
-
-
+//Test whether an item is not in a array
+console.log('Testing "Apple" is not in a array: ', !fruits.includes('Apple'));
