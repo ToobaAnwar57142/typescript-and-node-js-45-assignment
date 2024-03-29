@@ -1,12 +1,8 @@
-"use strict";
-//Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript.
-Object.defineProperty(exports, "__esModule", { value: true });
-//Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
-function make_shirt(size, text) {
-    if (size === void 0) { size = 'Large'; }
-    if (text === void 0) { text = 'I love TypeScript.'; }
-    console.log("Creating a ".concat(size, " shirt with the message: ").concat(text));
+//Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default:country
+function describe_city(city, country) {
+    if (country === void 0) { country = 'Default_Country.'; }
+    console.log(" ".concat(city, " is in ").concat(country));
 }
-make_shirt();
-make_shirt('Medium');
-make_shirt('Small', "I LOVE python");
+describe_city('Karachi', 'Pakistan');
+describe_city('Tokyo', 'Japan');
+describe_city('Paris');
