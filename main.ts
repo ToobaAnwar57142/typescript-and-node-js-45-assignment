@@ -1,38 +1,18 @@
-//Unchanged Magicians: Start with your work from Exercise 40. Call let magician : string[] = ['Harry Potter','Hermione Granger','Ron Weasley','Albus Dumbledore'];
+//Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 
 
 
-let magician : string[] =['Harry Potter','Herminoe Granger','Ron Weasley','Albus Dumbledore'];
+ function makeSandwich (item: string[]){
+    console.log("Making your sandwhich with:");
 
-function copyArray(arr:string[]){
-    return[...arr]
-}
+    item.forEach(element => console.log("-" + element));
 
-
-function make_great (magicanArry:string[]){
-
-       for(let i=0; i<magicanArry.length; i++){
-
-              magician[i] = 'the Great' + magicanArry[i]
-       }
-
-}     
-
-function show_magicians(magicans: string[]){
-
-    magician.forEach(element => {
-        console.log(element);
-    });
-}
+    console.log("Enjoy your sandwhich !");
+ }
 
 
-const copyMagicianArray = copyArray (magician);
+makeSandwich (['Chicken','Cheese','Egg']);
 
-make_great(copyMagicianArray);
+makeSandwich (['Butter','Peanut butter']);
 
-console.log('\n\nthis is my orignal array:');
-show_magicians(magician);
-
-console.log ('\n\nThis is my modfied copy of the array:');
-show_magicians(copyMagicianArray);
-
+makeSandwich (['Turkey','Lettuce','Cheese', 'Fish']);
