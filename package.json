@@ -1,6 +1,7 @@
 {
-  "name": "excerise-18",
+  "name": "excerise19",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.26"
-  },
-  "dependencies": {
-    "undici-types": "^5.26.5"
-  },
-  "description": ""
+    "@types/node": "^20.11.25"
+  }
 }
