@@ -1,16 +1,17 @@
-//T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. 
+//Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript.
 
-//Call the function.
+import { text } from "node:stream/consumers";
 
-function make_shirt(size:string, text:string){
+//Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 
-  console.log(`creating a ${size} shirt with the message: ${text}`);  
+function make_shirt(size:string = 'Large', text:string = 'I love TypeScript.'){
+
+    console.log(`Creating a ${size} shirt with the message: ${text}`);
+
 }
 
-make_shirt('lagre','Hello world');
+make_shirt ();
 
-make_shirt('medium','Hello world');
+make_shirt('Medium');
 
-make_shirt('small','Hello world');
-
-
+make_shirt ('Small',`I LOVE python`);
