@@ -1,9 +1,15 @@
-"use strict";
-//Excerise 14: Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Guest_list = void 0;
-var Guest_list = ["Muhammad", "Anwar", "Sakina"];
-exports.Guest_list = Guest_list;
-for (var a = 0; a < Guest_list.length; a++) {
-    console.log("Dear ".concat(Guest_list[a], ": /n you are invited to dinner! /n"));
+/*Excerise 15: Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+
+• Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+• Print a second set of invitation messages, one for each person who is still in your list.*/
+var Guest_List = ["Muhamma", "Anwar", "Sakina"];
+for (var a = 0; a < Guest_List.length; a++) {
+    console.log("Dear ".concat([a], "; /n you are invited to dinner!\n"));
+}
+console.log("\"Unfortunately ".concat(Guest_List[1], ", can't come to dinner.\""));
+Guest_List[1] = "Zain";
+console.log("\nNEW LIST OF INVITATION : \n");
+for (var i = 0; i < Guest_List.length; i++) {
+    console.log("Dear ".concat(Guest_List[i], " : /n you are invited to dinner!\n"));
 }
