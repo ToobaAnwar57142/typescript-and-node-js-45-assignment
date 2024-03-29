@@ -1,13 +1,8 @@
-/*Excerise :19 Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.*/
+//Excerise 20: Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
 
-import{ Guest_list } from '../Excerise 14/main'
-console.log(`n\PRINTING NUMBER GUEST INVITED`)
-console.log(`we had finally invited ${Guest_list.length} from excerise 14`)
+let languages : string [] = ['english','urdu','french','arabic','Hindhi']
+console.log('list of languages:')
+for(let top of languages){
+    console.log(top)
 
-
-
-
-
-
-
-
+}
