@@ -1,48 +1,19 @@
-//Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain
-//• Write three versions of this program, making sure each message is printed for the appropriate color alien.
-var alienColors = "green";
-//• If the alien is green, print a message that the player earned 10 points.
-//• If the alien is yellow, print a message that the player earned 10 points.
-//• If the alien is red, print a message that the player earned 15 points.
-//•Version 1 of the program 
-if (alienColors === "green") {
-    console.log("player earned 5 points");
+//Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+//• Make a array of your three favorite fruits and call it favorite_fruits.
+//• Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+var favorite_fruits = ["apple", "banana", "mango"];
+if (favorite_fruits.includes("apple")) {
+    console.log("I really like apple");
 }
-else if (alienColors === "yellow") {
-    console.log("player earned 10 points");
+if (favorite_fruits.includes("banana")) {
+    console.log("I really like banana");
 }
-else if (alienColors === "red") {
-    console.log("player earned 15 points");
+if (favorite_fruits.includes("mango")) {
+    console.log("I really like mango");
 }
-else {
-    console.log("Please select right color");
+if (favorite_fruits.includes("orange")) {
+    console.log("I really like orange");
 }
-//•Version 2 of the program 
-alienColors = "yellow";
-if (alienColors === "green") {
-    console.log("player earned 5 points");
+if (favorite_fruits.includes("strawberry")) {
+    console.log("I really like strawberry");
 }
-else if (alienColors === "yellow") {
-    console.log("player earned 10 points");
-}
-else if (alienColors === "red") {
-    console.log("player earned 15 points");
-}
-else {
-    console.log("Please select right color");
-}
-//•Version 2 of the program 
-alienColors = "red";
-if (alienColors === "green") {
-    console.log("player earned 5 points");
-}
-else if (alienColors === "yellow") {
-    console.log("player earned 10 points");
-}
-else if (alienColors === "red") {
-    console.log("player earned 15 points");
-}
-else {
-    console.log("Please select right color");
-}
-//• Write three versions of this program, making sure each message is printed for the appropriate color alien.*/
