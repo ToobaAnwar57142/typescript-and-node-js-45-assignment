@@ -1,24 +1,30 @@
-/*Excerise 15: Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+/*Excerise :16 More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 
-• Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
-• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
-• Print a second set of invitation messages, one for each person who is still in your list.*/
+• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+• Add one new guest to the beginning of your array.
+• Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.*/
 
-let Guest_List : string[] = ["Muhamma", "Anwar", "Sakina"]
+let Guest_List : string[] = ["Muhammad", "Anwar", "Sakina"]
 
-for (let a=0; a < Guest_List.length; a++){
-    console.log(`Dear ${[a]}; /n you are invited to dinner!\n`);
-}
 
-console.log(`"Unfortunately ${Guest_List[1]}, can't come to dinner."`)
 
-Guest_List[1] = "Zain";
-
-console.log("\nNEW LIST OF INVITATION : \n");
+console.log("\nNEW LIST OF INVITATION :  \n");
 
 for ( let i=0; i < Guest_List.length; i++){
-    console.log(`Dear ${Guest_List[i]} : /n you are invited to dinner!\n`);
+    console.log(`Dear ${Guest_List[i]} :  /n you are invited to dinner!\n`);
 }
+
+console.log("Good news! We've found a bigger dinner table, so more space is available. so our new guests are :\n")
+
+Guest_List.unshift("Areeba");
+Guest_List.splice(2, 0,"Ayesha");
+Guest_List.push("Hiba"); 
+
+for ( let a=0; a < Guest_List.length; a++){
+    console.log(`Dear ${Guest_List[a]} :   /n you are invited to dinner! \n`);
+}
+
+
 
 
 
